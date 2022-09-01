@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img generator</title>
+</head>
+
+<body>
+    <h1>IMG GENERATOR</h1>
+
+    <div class="inputs">
+        <button class="btn">Generate</button>
+        <select id="types">
+            <option>Choose photo Type</option>
+            <option>Colorful</option>
+            <option>B&W</option>
+        </select>
+    </div>
+
+    <div class="img">
+    </div>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: center;
+            position: relative;
+        }
+
+        .inputs {
+            margin: 0 auto;
+            width: fit-content;
+            background-color: aliceblue;
+        }
+
+        @media (max-width:600px) {
+
+            .img {
+                padding: 20px;
+
+                width: 100vw;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                align-items: space-evenly;
+
+                justify-content: center;
+                /* background-image: url("https://picsum.photos/200"); */
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .img {
+            padding: 20px;
+
+            /* width: 100vw; */
+            display: flex;
+            flex-wrap: wrap;
+
+
+            justify-content: space-evenly;
+            /* background-image: url("https://picsum.photos/200"); */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+        }
+
+        /* img {
+            width: 100%;
+            height: 100%;
+        } */
+    </style>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
